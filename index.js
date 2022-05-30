@@ -219,6 +219,7 @@ module.exports = async (options, pluginOptions = {}) => {
   }
 
   if (mode === 'production') {
+    await debounceStart(options, pluginOptions, true);
     await debounceBuild(options, pluginOptions, true);
     return;
   }
