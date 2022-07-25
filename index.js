@@ -279,6 +279,7 @@ async function build(options, pluginOptions, execCompile) {
       metaFormat,
       components,
       engineScope === '@alilc' ? 'npm' : 'tnpm',
+      lowcodeDir,
       entryPath,
     ));
   const confirmedMetaTypes = confirmMetaTypes(rootDir, lowcodeDir, metaTypes);
